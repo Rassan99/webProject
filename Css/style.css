@@ -182,6 +182,55 @@ header .navbar nav ul a {
   color: var(--LightBeige-color);
   font-weight: 600;
 }
+
+/* Image Ribbon Start */
+.image-ribbon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--LightBeige-color);
+  padding: 10px 0;
+}
+
+.image-ribbon {
+  display: flex;
+  width: calc(7 * 200px);
+  animation: scroll 10s linear infinite;
+}
+
+.image-ribbon img {
+  width: 200px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+/* Image Ribbon End */
 /* Header end */
 
 /*  الكلاسات اللي استخدمها اكثر من مرة  */
