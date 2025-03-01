@@ -211,6 +211,7 @@ header .navbar nav ul a {
   height: auto;
   margin: 0 10px;
   border-radius: 10px;
+  padding-top: 50px;
 }
 
 button {
@@ -250,7 +251,8 @@ button {
 
 /* about start */ 
 #about {
-  padding: 3rem 0;
+  position: relative;
+  top: -390px;
 }
 
 #about h2 {
