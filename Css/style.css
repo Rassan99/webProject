@@ -38,6 +38,7 @@ a {
 }
 
 
+
 /* index page Start */
 .index {
   background-color: #2c281d;
@@ -183,7 +184,9 @@ header .navbar nav ul a {
   font-weight: 600;
 }
 
+
 /* Image Ribbon Start */
+
 .image-ribbon-container {
   display: flex;
   align-items: center;
@@ -192,13 +195,15 @@ header .navbar nav ul a {
   width: 100%;
   overflow: hidden;
   background-color: var(--LightBeige-color);
-  padding: 10px 0;
+  padding: 20rem 4rem 0;
 }
+
 
 .image-ribbon {
   display: flex;
   width: calc(7 * 200px);
   animation: scroll 10s linear infinite;
+  
 }
 
 .image-ribbon img {
@@ -231,7 +236,9 @@ button {
   100% { transform: translateX(-100%); }
 }
 /* Image Ribbon End */
+
 /* Header end */
+
 
 /*  الكلاسات اللي استخدمها اكثر من مرة  */
 .container{
@@ -317,3 +324,152 @@ button {
 }
 
 /* about end */
+
+/* culture start*/
+#culture {
+  padding: 6rem 0;
+}
+#culture {
+  background-color: var(--Beige-color);
+  height: 100vh;
+}
+
+#culture .culture-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem 0;
+  height: 100%;
+}
+
+#culture .culture-content .content-text{
+  margin-bottom: 5rem;
+  text-align: center;
+  margin-right: 6rem;
+}
+
+
+
+#culture .culture-content h1 {
+  font-size: 60px;
+  color: var(--maroon-color);  
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) ; 
+  margin-top: 10px ;
+}
+
+#culture .culture-content .title {
+  font-size: 20px;
+  color: var(--maroon-color);  
+  margin: 10px 0;
+  font-weight: 800; 
+      
+}
+
+#culture .culture-content img {
+  max-width: 500px;
+  border-radius: 25px;
+}
+
+/* culture end */
+
+
+/* Medicinal start*/
+#Medicinal {
+  padding: 6rem 0;
+}
+#Medicinal {
+  background-color: var(--LightBeige-color);
+  height: 100vh;
+}
+
+#Medicinal .Medicinal-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem 0;
+  height: 100%;
+}
+
+#Medicinal .Medicinal-content .content-text{
+  margin-bottom: 5rem;
+  text-align: center;
+  margin-left: 6rem;
+}
+
+
+
+#Medicinal .Medicinal-content h1 {
+  font-size: 60px;
+  color: var(--LightBrown-color);  
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) ; 
+  margin-top: 10px ;
+}
+
+#Medicinal .Medicinal-content .title {
+  font-size: 20px;
+  color: var(--Brown-color);  
+  margin: 10px 0;
+  font-weight: 800; 
+      
+}
+
+#Medicinal .Medicinal-content img {
+  max-width: 500px;
+  border-radius: 25px;
+  
+}
+/* Medicinal end */
+
+
+/* shop start*/
+#shop {
+  padding: 6rem 0;
+}
+#shop {
+  background-color: var(--Beige-color);
+  height: 100vh;
+}
+
+#shop .shop-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem rem 0;
+  height: 100%;
+}
+
+#shop .shop-content .content-text{
+  margin-bottom: 5rem;
+  text-align: center;
+  margin-right: 6rem;
+}
+
+
+
+#shop .shop-content h1 {
+  font-size: 60px;
+  color: var(--maroon-color);  
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) ; 
+  margin-top: 10px ;
+}
+
+#shop .shop-content .title {
+  font-size: 20px;
+  color: var(--maroon-color);  
+  margin: 10px 0;
+  font-weight: 800; 
+      
+}
+
+#shop .shop-content img {
+  max-width: 500px;
+  border-radius: 25px;
+}
+
+/* shop end */
