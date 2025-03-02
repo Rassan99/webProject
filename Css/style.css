@@ -105,7 +105,7 @@ a {
 /* Header Start */
 header {
   background-color: var(--bg-primary);
-  height: 100vh;
+  height: auto; /* Adjusted for content */
 }
 
 header .navbar {
@@ -153,7 +153,7 @@ header .navbar nav ul a {
   width: 100%;
   overflow: hidden;
   background-color: var(--LightBeige-color);
-  padding: 20rem 4rem 0;
+  padding: 30px 4rem 0;
 }
 
 
@@ -209,8 +209,7 @@ button {
 
 /* about start */ 
 #about {
-  position: relative;
-  top: -390px;
+  padding: 6rem 0;
 }
 
 #about h2 {
@@ -431,5 +430,11 @@ button {
   max-width: 500px;
   border-radius: 25px;
 }
-
 /* shop end */
+
+#about, #culture, #Medicinal, #shop {
+  padding-top:30px;
+  margin-top: -150;
+}
+
+
