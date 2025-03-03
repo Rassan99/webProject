@@ -104,13 +104,13 @@ a {
 
 /* Header Start */
 header {
-  background-color: var(--bg-primary);
+  background-color: var(--maroon-color);
   height: auto; /* Adjusted for content */
 }
 
 header .navbar {
   background-color: var(--maroon-color);
-  border-bottom: 1px solid var(--Beige-color);
+  border-bottom: 1px solid var(--maroon-color);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -291,6 +291,7 @@ button {
 #culture {
   background-color: var(--Beige-color);
   height: 100vh;
+  
 }
 
 #culture .culture-content {
@@ -306,7 +307,7 @@ button {
 #culture .culture-content .content-text{
   margin-bottom: 5rem;
   text-align: center;
-  margin-right: 6rem;
+  margin-right: 1rem;
 }
 
 
@@ -356,7 +357,7 @@ button {
 #Medicinal .Medicinal-content .content-text{
   margin-bottom: 5rem;
   text-align: center;
-  margin-left: 6rem;
+  margin-left: 1rem;
 }
 
 
@@ -399,14 +400,14 @@ button {
   align-items: center;
   max-width: 1100px;
   margin: auto;
-  padding: 5rem rem 0;
+  padding: 5rem 2rem 0;
   height: 100%;
 }
 
 #shop .shop-content .content-text{
   margin-bottom: 5rem;
   text-align: center;
-  margin-right: 6rem;
+  margin-right: 1rem;
 }
 
 
@@ -436,5 +437,142 @@ button {
   padding-top:30px;
   margin-top: -150;
 }
+
+/*footer start*/
+#footer{
+  background-color:var(--maroon-color);
+  color: var(--Beige-color);
+  padding:  1rem 0;
+  text-align: center;
+}
+/*footer end*/
+
+
+/* Respnsive 768px start */
+@media (max-width: 768px){
+
+  #home .navbar nav {
+    display: block;
+    text-align: center;
+  }
+
+  #home .navbar nav ul {
+    margin-top: 20px;
+  }
+
+  #home .navbar nav ul a{
+    margin: 0 8px;
+  }
+  
+  #about  .row
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+  #culture .culture-content , #shop .shop-content {
+      grid-template-columns: 1fr ;
+      
+      
+    }
+
+    #Medicinal .Medicinal-content{
+      grid-template-columns: 2fr ;
+    }
+
+  #culture .culture-content h1 ,
+  #shop .shop-content h1 ,
+  #Medicinal .shop-content h1{
+      font-size: 50px;
+      
+    }
+
+  #culture .culture-content img ,
+  #shop .shop-content img ,
+  #Medicinal .Medicinal-content img {
+      max-width: 500px;
+      margin: auto; 
+        
+    }
+}
+
+    /* Responsive 576px Start */
+@media (max-width: 576px) {
+  #home .navbar nav {
+    display: block;
+    text-align: center;
+  }
+
+  #home .navbar nav ul {
+    margin-top: 15px;
+  }
+
+  #home .navbar nav ul a {
+    margin: 0 5px;
+  }
+
+  #about .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #culture .culture-content, 
+  #shop .shop-content,
+  #Medicinal .Medicinal-content {
+    grid-template-columns: 1fr;
+  }
+
+  #culture .culture-content h1, 
+  #shop .shop-content h1, 
+  #Medicinal .Medicinal-content h1 {
+    font-size: 40px;
+  }
+
+  #culture .culture-content img, 
+  #shop .shop-content img, 
+  #Medicinal .Medicinal-content img {
+    max-width: 350px;
+    margin: auto;
+  }
+}
+
+/* Responsive 992px Start */
+@media (max-width: 992px) {
+  #home .navbar nav {
+    display: block;
+    text-align: center;
+  }
+
+  #home .navbar nav ul {
+    margin-top: 25px;
+  }
+
+  #home .navbar nav ul a {
+    margin: 0 10px;
+  }
+
+  #about .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #culture .culture-content, 
+  #shop .shop-content,
+  #Medicinal .Medicinal-content {
+    grid-template-columns: 1fr;
+  }
+
+  #culture .culture-content h1, 
+  #shop .shop-content h1, 
+  #Medicinal .Medicinal-content h1 {
+    font-size: 55px;
+  }
+
+  #culture .culture-content img, 
+  #shop .shop-content img, 
+  #Medicinal .Medicinal-content img {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+
 
 
