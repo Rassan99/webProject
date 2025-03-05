@@ -716,3 +716,66 @@ body {
   width: 200px;
   height: auto;
 }
+#comments {
+  padding: 6rem 0;
+  background-color: var(--LightBeige-color);
+}
+
+#comments h2 {
+  text-align: center;
+  font-size: 38px;
+  color: var(--maroon-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+#comments hr {
+  background-color: var(--LightMaroon-color);
+  width: 100px;
+  height: 3px;
+  border: none;
+  margin: 5px auto;
+}
+
+#comment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--Beige-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#comment-form label {
+  font-size: 18px;
+  color: var(--maroon-color);
+  display: block;
+  margin-bottom: 8px;
+}
+
+#comment-form input[type="text"],
+#comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--maroon-color);
+  border-radius: 4px;
+  background-color: var(--LightBeige-color);
+  color: var(--black-color);
+  font-size: 16px;
+}
+
+#comment-form input[type="submit"] {
+  background-color: var(--maroon-color);
+  color: var(--LightBeige-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#comment-form input[type="submit"]:hover {
+  background-color: var(--LightMaroon-color);
+}
