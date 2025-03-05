@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="navbar">
+        <nav>
+          <a href="index.html" id="logo"> DESERT BLOOM </a>
+          <ul>
+            <li><a href="contact-us.html"> تواصل معنا </a></li>
+            <li><a href="page4.html#shop"> الاسواق المحلية </a></li>
+            <li><a href="page4.html#Medicinal"> النبات والعلاج </a></li>
+            <li><a href="page4.html#culture"> النبات والثقافة </a></li>
+            <li><a href="about-us.html"> عن موقعنا </a></li>
+            <li><a href="page4.html#home"> الرئيسية </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="contact-us">
+      <div class="container">
+        <h2>اتصل بنا</h2>
+        <form action="submit_form.php" method="POST">
+          <label for="firstName">الاسم الأول</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">الاسم الأخير</label>
+          <input type="text" id="lastName" name="lastName" required />
+
+          <label for="gender">الجنس</label>
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>اختر الجنس</option>
+            <option value="male">ذكر</option>
+            <option value="female">أنثى</option>
+            <option value="other">أخر</option>
+          </select>
+
+          <label for="mobile">رقم الهاتف المحمول</label>
+          <input type="text" id="mobile" name="mobile" required />
+
+          <label for="dob">تاريخ الميلاد</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="language">اللغة المفضلة</label>
+          <select id="language" name="language" required>
+            <option value="" disabled selected>اختر اللغة</option>
+            <option value="arabic">العربية</option>
+            <option value="english">الإنجليزية</option>
+            <option value="french">الفرنسية</option>
+          </select>
+
+          <label for="message">الرسالة</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">إرسال</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>DESERT BLOOM</p>
+    </footer>
+  </body>
+</html>
