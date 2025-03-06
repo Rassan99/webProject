@@ -59,13 +59,14 @@ a {
 }
 
 .index {
+  
   overflow: hidden;
   word-wrap: break-word;
   min-height: 30vh;
   height: auto;
   margin-top: 90px;
   background-color: #57544d;
-  position: fixed;
+  position: relative;
   right: 30%;
   top: 50%;
   transform: translateY(-50%);
@@ -411,10 +412,13 @@ button {
 #Medicinal,
 #shop {
   padding-top: 30px;
-  margin-top: -150;
+  margin-top: -150px;
 }
 
+
 #footer {
+  position: relative;
+  z-index: 1;
   background-color: var(--maroon-color);
   color: var(--Beige-color);
   padding: 1rem 0;
