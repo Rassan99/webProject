@@ -201,6 +201,7 @@ button {
 /* about start */
 #about {
   padding: 6rem 0;
+  padding-bottom: 9rem;
 }
 
 #about h2 {
@@ -209,6 +210,7 @@ button {
   color: var(--maroon-color);
   font-weight: 600;
   letter-spacing: 1px;
+  padding-top: 6rem;
 }
 #about h4 {
   text-align: center;
@@ -277,6 +279,7 @@ button {
 /* culture start*/
 #culture {
   padding: 6rem 0;
+  
 }
 #culture {
   background-color: var(--Beige-color);
@@ -424,7 +427,7 @@ button {
   padding: 1rem 0;
   text-align: center;
 }
-
+/* page4 resppnsive */
 @media (max-width: 768px) {
   #home .navbar nav {
     display: block;
@@ -464,6 +467,8 @@ button {
     max-width: 500px;
     margin: auto;
   }
+  
+  
 }
 
 @media (max-width: 576px) {
@@ -471,6 +476,7 @@ button {
     display: block;
     text-align: center;
   }
+  
 
   #home .navbar nav ul {
     margin-top: 15px;
