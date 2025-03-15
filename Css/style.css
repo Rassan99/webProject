@@ -104,7 +104,7 @@ header {
 header .navbar {
   background-color: var(--maroon-color);
   border-bottom: 1px solid var(--maroon-color);
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 1;
 }
@@ -115,6 +115,7 @@ header .navbar nav {
   max-width: 1100px;
   margin: auto;
   padding: 1.5rem 2rem;
+  position:relative;
 }
 
 #home #logo {
@@ -277,13 +278,12 @@ button {
 /* about end */
 
 /* culture start*/
+
 #culture {
   padding: 6rem 0;
-  
-}
-#culture {
   background-color: var(--Beige-color);
   height: 100vh;
+  position:relative;
 }
 
 #culture .culture-content {
@@ -330,6 +330,7 @@ button {
 #Medicinal {
   background-color: var(--LightBeige-color);
   height: 100vh;
+  position:relative;
 }
 
 #Medicinal .Medicinal-content {
@@ -373,6 +374,7 @@ button {
 #shop {
   background-color: var(--Beige-color);
   height: 100vh;
+  position:relative;
 }
 
 #shop .shop-content {
@@ -489,24 +491,41 @@ button {
   #about .row {
     grid-template-columns: repeat(1, 1fr);
   }
-
+/*
   #culture .culture-content,
   #shop .shop-content,
   #Medicinal .Medicinal-content {
     grid-template-columns: 1fr;
+    
   }
 
   #culture .culture-content h1,
   #shop .shop-content h1,
   #Medicinal .Medicinal-content h1 {
     font-size: 40px;
+    
+
   }
 
   #culture .culture-content img,
   #shop .shop-content img,
   #Medicinal .Medicinal-content img {
-    max-width: 350px;
+    max-width: 100px;
     margin: auto;
+    
+  }*/
+  #culture .culture-content,
+  #shop .shop-content,
+  #Medicinal .Medicinal-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #culture .culture-content img,
+  #shop .shop-content img,
+  #Medicinal .Medicinal-content img  {
+    width: 80%;
+    max-width: 100%;
   }
 }
 
