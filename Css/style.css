@@ -491,29 +491,7 @@ button {
   #about .row {
     grid-template-columns: repeat(1, 1fr);
   }
-/*
-  #culture .culture-content,
-  #shop .shop-content,
-  #Medicinal .Medicinal-content {
-    grid-template-columns: 1fr;
-    
-  }
 
-  #culture .culture-content h1,
-  #shop .shop-content h1,
-  #Medicinal .Medicinal-content h1 {
-    font-size: 40px;
-    
-
-  }
-
-  #culture .culture-content img,
-  #shop .shop-content img,
-  #Medicinal .Medicinal-content img {
-    max-width: 100px;
-    margin: auto;
-    
-  }*/
   #culture .culture-content,
   #shop .shop-content,
   #Medicinal .Medicinal-content {
