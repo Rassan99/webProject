@@ -59,7 +59,6 @@ a {
 }
 
 .index {
-  
   overflow: hidden;
   word-wrap: break-word;
   min-height: 30vh;
@@ -115,7 +114,7 @@ header .navbar nav {
   max-width: 1100px;
   margin: auto;
   padding: 1.5rem 2rem;
-  position:relative;
+  position: relative;
 }
 
 #home #logo {
@@ -283,7 +282,7 @@ button {
   padding: 6rem 0;
   background-color: var(--Beige-color);
   height: 100vh;
-  position:relative;
+  position: relative;
 }
 
 #culture .culture-content {
@@ -330,7 +329,7 @@ button {
 #Medicinal {
   background-color: var(--LightBeige-color);
   height: 100vh;
-  position:relative;
+  position: relative;
 }
 
 #Medicinal .Medicinal-content {
@@ -374,7 +373,7 @@ button {
 #shop {
   background-color: var(--Beige-color);
   height: 100vh;
-  position:relative;
+  position: relative;
 }
 
 #shop .shop-content {
@@ -419,7 +418,6 @@ button {
   padding-top: 30px;
   margin-top: -150px;
 }
-
 
 #footer {
   position: relative;
@@ -469,8 +467,6 @@ button {
     max-width: 500px;
     margin: auto;
   }
-  
-  
 }
 
 @media (max-width: 576px) {
@@ -478,7 +474,6 @@ button {
     display: block;
     text-align: center;
   }
-  
 
   #home .navbar nav ul {
     margin-top: 15px;
@@ -501,7 +496,7 @@ button {
 
   #culture .culture-content img,
   #shop .shop-content img,
-  #Medicinal .Medicinal-content img  {
+  #Medicinal .Medicinal-content img {
     width: 80%;
     max-width: 100%;
   }
@@ -723,66 +718,87 @@ body {
   width: 200px;
   height: auto;
 }
+
 #comments {
-  padding: 6rem 0;
-  background-color: var(--LightBeige-color);
+  background-color: var(--LightBeige-color, #fffaf1);
+  padding: 60px 20px;
 }
 
-#comments h2 {
-  text-align: center;
-  font-size: 38px;
-  color: var(--maroon-color);
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-}
-
-#comments hr {
-  background-color: var(--LightMaroon-color);
-  width: 100px;
-  height: 3px;
-  border: none;
-  margin: 5px auto;
+#comments .container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 #comment-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: var(--Beige-color);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#comment-form label {
-  font-size: 18px;
-  color: var(--maroon-color);
-  display: block;
-  margin-bottom: 8px;
+  margin-bottom: 40px;
 }
 
 #comment-form input[type="text"],
 #comment-form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--maroon-color);
-  border-radius: 4px;
-  background-color: var(--LightBeige-color);
-  color: var(--black-color);
-  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 #comment-form input[type="submit"] {
-  background-color: var(--maroon-color);
-  color: var(--LightBeige-color);
-  padding: 12px 20px;
+  background-color: #a36336;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
-  font-size: 18px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-#comment-form input[type="submit"]:hover {
-  background-color: var(--LightMaroon-color);
+.comment-ribbon-wrapper {
+  overflow: hidden;
+  border-top: 2px solid #f0c26e;
+  padding-top: 30px;
+}
+
+.comment-ribbon {
+  display: flex;
+  gap: 30px;
+  animation: scroll-ribbon 30s linear infinite;
+  will-change: transform;
+}
+
+.comment-box {
+  flex-shrink: 0;
+  min-width: 260px;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #f3ce91;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  font-family: "Amiri", serif;
+  color: #4b3a2f;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.comment-box h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #a36336;
+}
+
+.comment-box p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes scroll-ribbon {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

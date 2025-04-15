@@ -25,23 +25,43 @@
     <section id="contact-us">
       <div class="container">
         <h2>اتصل بنا</h2>
-        <form action="submit_form.php" method="POST">
+        <form id="contact-form">
           <label for="firstName">الاسم الأول</label>
-          <input type="text" id="firstName" name="firstName" required />
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            minlength="2"
+            maxlength="20"
+          />
 
           <label for="lastName">الاسم الأخير</label>
-          <input type="text" id="lastName" name="lastName" required />
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            minlength="2"
+            maxlength="20"
+          />
 
           <label for="gender">الجنس</label>
           <select id="gender" name="gender" required>
             <option value="" disabled selected>اختر الجنس</option>
             <option value="male">ذكر</option>
             <option value="female">أنثى</option>
-            <option value="other">أخر</option>
           </select>
 
           <label for="mobile">رقم الهاتف المحمول</label>
-          <input type="text" id="mobile" name="mobile" required />
+          <input
+            type="text"
+            id="mobile"
+            name="mobile"
+            required
+            pattern="^05[0-9]{8}$"
+            placeholder="مثل 0501234567"
+          />
 
           <label for="dob">تاريخ الميلاد</label>
           <input type="date" id="dob" name="dob" required />
@@ -58,7 +78,14 @@
           </select>
 
           <label for="message">الرسالة</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            required
+            minlength="10"
+            maxlength="500"
+            placeholder="أدخل رسالتك هنا"
+          ></textarea>
 
           <button type="submit">إرسال</button>
         </form>
@@ -67,5 +94,6 @@
     <footer id="footer">
       <p>DESERT BLOOM</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

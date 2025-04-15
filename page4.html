@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DESERT BLOOM</title>
 
-    <!-- style -->
     <link rel="stylesheet" href="Css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
@@ -13,7 +12,6 @@
     />
   </head>
   <body>
-    <!-- header start -->
     <header id="home">
       <div class="navbar">
         <nav>
@@ -29,7 +27,6 @@
         </nav>
       </div>
 
-      <!-- Image Ribbon Start -->
       <div class="image-ribbon-container">
         <button id="prevBtn">&#10094;</button>
         <div class="image-ribbon">
@@ -43,12 +40,9 @@
         </div>
         <button id="nextBtn">&#10095;</button>
       </div>
-      <!-- Image Ribbon End -->
     </header>
-    <!-- header end -->
 
     <main>
-      <!-- about start  -->
       <section id="about">
         <div class="container">
           <h2>عن موقعنا</h2>
@@ -59,7 +53,6 @@
             استكشفوا كيف ترتبط هذه الكنوز بتراثنا العريق وحياتنا اليومية
           </h4>
           <div class="row">
-            <!--الاسواق -->
             <div class="item">
               <img src="./Media/aboutCoffeePic.png" alt="shop" />
               <div class="item-content">
@@ -72,7 +65,6 @@
               </div>
             </div>
 
-            <!--والعلاج -->
             <div class="item">
               <img src="./Media/plamTreePic.png" alt="Medicinal " />
               <div class="item-content">
@@ -85,7 +77,6 @@
               </div>
             </div>
 
-            <!--الثقافة  -->
             <div class="item">
               <img src="./Media/ricePic.png" alt="culture" />
               <div class="item-content">
@@ -99,9 +90,7 @@
           </div>
         </div>
       </section>
-      <!-- about end  -->
 
-      <!--culture start-->
       <section id="culture">
         <div class="culture-content">
           <div class="content-text">
@@ -119,9 +108,7 @@
           <img src="./Media/culture.png " alt="culture" />
         </div>
       </section>
-      <!--culture end-->
 
-      <!--Medicinal start-->
       <section id="Medicinal">
         <div class="Medicinal-content">
           <img src="./Media/Medicinal.png " alt="Medicinal" />
@@ -139,9 +126,7 @@
           </div>
         </div>
       </section>
-      <!--Medicinal end-->
 
-      <!--shop start-->
       <section id="shop">
         <div class="shop-content">
           <div class="content-text">
@@ -160,12 +145,13 @@
           <img src="./Media//shop.png " alt="shop" />
         </div>
       </section>
-      <!--shop end-->
+
       <section id="comments">
         <div class="container">
           <h2>أترك تعليقك</h2>
           <hr />
-          <form action="#" method="post" id="comment-form">
+
+          <form id="comment-form">
             <label for="name">الاسم:</label>
             <input
               type="text"
@@ -173,6 +159,8 @@
               name="name"
               required
               placeholder="أدخل اسمك"
+              minlength="2"
+              maxlength="30"
             />
 
             <label for="comment">تعليقك:</label>
@@ -182,18 +170,24 @@
               rows="4"
               required
               placeholder="أكتب تعليقك هنا"
+              minlength="5"
+              maxlength="300"
             ></textarea>
 
             <input type="submit" value="أرسل تعليقك" />
           </form>
+
+          <div class="comment-ribbon-wrapper">
+            <div class="comment-ribbon" id="comment-ribbon"></div>
+          </div>
         </div>
       </section>
 
-      <!--footer start-->
+      <script src="script.js"></script>
+
       <footer id="footer">
         <p>DESERT BLOOM</p>
       </footer>
-      <!--footer end-->
     </main>
   </body>
 </html>
