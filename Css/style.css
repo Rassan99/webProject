@@ -43,6 +43,7 @@ a {
 }
 
 .bottom-left-image {
+  background-color: #2c281d;
   position: fixed;
   bottom: 0;
   left: 0%;
@@ -51,6 +52,7 @@ a {
 }
 
 .bottom-right-image {
+  background-color: #2c281d;
   position: fixed;
   bottom: 0;
   right: 0%;
@@ -98,6 +100,7 @@ a {
 header {
   background-color: var(--maroon-color);
   height: auto; /* Adjusted for content */
+ 
 }
 
 header .navbar {
@@ -136,57 +139,66 @@ header .navbar nav ul a {
 }
 
 /* Image Ribbon Start */
-
-.image-ribbon-container {
+.flex-card-wrapper {
+  background: linear-gradient(to bottom, #f7f0e8, #e9dad0);
+  padding: 1rem 1rem 1rem;
   display: flex;
-  align-items: center;
+  gap: 15px;
+  overflow-x: auto;
   justify-content: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+.flex-card-img {
   position: relative;
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--LightBeige-color);
-  padding: 30px 4rem 0;
-}
-
-.image-ribbon {
-  display: flex;
-  width: calc(7 * 200px);
-  animation: scroll 10s linear infinite;
-}
-
-.image-ribbon img {
-  width: 200px;
-  height: auto;
-  margin: 0 10px;
-  border-radius: 10px;
-  padding-top: 50px;
-}
-
-button {
-  background-color: rgb(219 65 65 / 50%);
-  color: white;
-  border: none;
+  flex-shrink: 0;
+  width: 80px;
+  height: 300px;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-#prevBtn {
-  left: 10px;
+.flex-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
-#nextBtn {
-  right: 10px;
+.flex-card-img.active {
+  width: 300px;
+  transform: scale(1.03);
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.flex-card-img:hover img {
+  transform: scale(1.05);
 }
+
+/* 👑 Caption Glow & Slide In */
+.caption {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  color: #fff;  
+  text-align: right;
+  padding-right: 12px;
+  font-family: "Amiri", serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: all 0.4s ease-in-out;
+  text-shadow: 1px 1px 2px #000000;
+  backdrop-filter: blur(2px);
+}
+
+.flex-card-img:hover .caption {
+  bottom: 0;
+}
+
+
 /* Image Ribbon End */
 
 /* Header end */
@@ -416,7 +428,7 @@ button {
 #Medicinal,
 #shop {
   padding-top: 30px;
-  margin-top: -150px;
+  margin-top: 0;
 }
 
 #footer {
