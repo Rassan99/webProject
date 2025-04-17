@@ -185,6 +185,37 @@
         </div>
       </section>
 
+      <section id="filter">
+        <div class="filter-bg"></div>
+        <div class="filter-overlay"></div>
+      
+        <div class="filter-content">
+          <h1 class="main-title">استكشف المدن</h1>
+      
+          <div class="filter-container">
+            <label for="region">اختر المنطقة:</label>
+            <select id="region">
+              <option value="">-- اختر المنطقة --</option>
+              <option value="الجنوبية">الجنوبية</option>
+              <option value="الغربية">الغربية</option>
+              <option value="الشمالية">الشمالية</option>
+            </select>
+      
+            <label for="city">اختر المدينة:</label>
+            <select id="city">
+              <option value="">-- اختر المدينة --</option>
+            </select>
+          </div>
+      
+          <div class="cards-container" id="cards">
+            <!-- بطاقات المدن ستظهر هنا -->
+          </div>
+        </div>
+      
+        <script src="cities-filter.js"></script>
+      </section>
+      
+
       <section id="comments">
         <div class="container">
           <h2>أترك تعليقك</h2>
