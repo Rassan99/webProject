@@ -25,7 +25,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h4 {
   font-family: "Amiri", serif;
 }
 
@@ -198,6 +199,10 @@ header .navbar nav ul a {
   bottom: 0;
 }
 
+.image-ribbon {
+  margin-top: 80px; 
+}
+
 /* Image Ribbon End */
 
 /* Header end */
@@ -212,7 +217,7 @@ header .navbar nav ul a {
 /* about start */
 #about {
   padding: 6rem 0;
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
 }
 
 #about h2 {
@@ -221,7 +226,7 @@ header .navbar nav ul a {
   color: var(--maroon-color);
   font-weight: 600;
   letter-spacing: 1px;
-  padding-top: 6rem;
+  padding-top: 1rem;
 }
 #about h4 {
   text-align: center;
