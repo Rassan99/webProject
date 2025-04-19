@@ -140,6 +140,7 @@ header .navbar nav ul a {
 
 /* Image Ribbon Start */
 .flex-card-wrapper {
+  margin-top: 100px;
   background: linear-gradient(to bottom, #f7f0e8, #e9dad0);
   padding: 1rem 1rem 1rem;
   display: flex;
