@@ -141,6 +141,7 @@ header .navbar nav ul a {
 
 /* Image Ribbon Start */
 .flex-card-wrapper {
+  margin-top: 100px;
   background: linear-gradient(to bottom, #f7f0e8, #e9dad0);
   padding: 1rem 1rem 1rem;
   display: flex;
@@ -956,3 +957,40 @@ body {
     transform: translateX(-100%);
   }
 }
+
+.expandable-card .expanded-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.7s ease, opacity 0.7s ease;
+  margin-top: 1rem;
+}
+
+.expandable-card:hover .expanded-content {
+  max-height: 2000px;
+  opacity: 1;
+}
+
+.crop-section {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.crop-section h4 {
+  color: #f5e7dd;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e9d9d0;
+  padding-bottom: 0.3rem;
+}
+
+.crop-section p {
+  color: #f7f0ea;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
