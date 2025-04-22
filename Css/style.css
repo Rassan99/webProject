@@ -193,7 +193,9 @@ header .navbar nav ul a {
   border-bottom-right-radius: 15px;
   transition: all 0.4s ease-in-out;
   text-shadow: 1px 1px 2px #000000;
-  backdrop-filter: blur(2px);
+  
+  -webkit-backdrop-filter: blur(2px);           /* <-- Standard */
+  backdrop-filter: blur(2px);   /* <-- Safari */
 }
 
 .flex-card-img:hover .caption {
@@ -957,7 +959,6 @@ body {
     transform: translateX(-100%);
   }
 }
-
 .expandable-card .expanded-content {
   max-height: 0;
   overflow: hidden;
@@ -966,31 +967,117 @@ body {
   margin-top: 1rem;
 }
 
-.expandable-card:hover .expanded-content {
+.expandable-card.expanded .expanded-content {
   max-height: 2000px;
   opacity: 1;
+}
+
+
+.crop-section {
+  transition: all 0.4s ease;
+  max-height: 4rem;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+.crop-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .crop-section {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 1rem 1.2rem;
-  margin-bottom: 1rem;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 4rem;
+  position: relative;
 }
 
 .crop-section h4 {
-  color: #f5e7dd;
+  margin: 0;
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
   border-bottom: 1px solid #e9d9d0;
   padding-bottom: 0.3rem;
+  color: #f5e7dd;
 }
 
 .crop-section p {
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   color: #f7f0ea;
-  font-size: 1rem;
   line-height: 1.8;
   text-align: justify;
 }
 
+/* expanded crop */
+.crop-section.active {
+  max-height: 2000px;
+}
+
+.crop-section.active p {
+  opacity: 1;
+}
+
+/* hide others */
+.crop-section.hidden {
+  display: none;
+}
+.sub-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.sub-info {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  max-height: 2.8rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.sub-info h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fceee3;
+  border-bottom: 1px solid #e9d9d0;
+  padding-bottom: 0.3rem;
+}
+
+.sub-info p {
+  margin-top: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #f7f0ea;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* expanded sub-info */
+.sub-info.active {
+  max-height: 600px;
+}
+
+.sub-info.active p {
+  opacity: 1;
+}
+
+/* hide other sub-infos when one is active */
+.sub-info.hidden {
+  display: none;
+}
