@@ -32,8 +32,13 @@ citySelect.addEventListener("change", () => {
   const city = citySelect.value;
   cardsContainer.innerHTML = "";
 
-  if (city === "جازان") {
-    const template = document.getElementById("jazan-card-template");
+  let templateId = null;
+  if (city === "جازان") templateId = "jazan-card-template";
+  else if (city === "الطائف") templateId = "taif-card-template";
+  else if (city === "الجوف") templateId = "jouf-card-template";
+
+  if (templateId) {
+    const template = document.getElementById(templateId);
     const content = template.content.cloneNode(true);
     cardsContainer.appendChild(content);
 
