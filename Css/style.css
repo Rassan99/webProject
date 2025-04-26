@@ -557,6 +557,13 @@ select {
   line-height: 1.6;
 }
 
+.info-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
 
 @media (max-width: 600px) {
   #filter .main-title {
